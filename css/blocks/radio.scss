@@ -1,0 +1,80 @@
+.radio{
+  display: flex;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  user-select: none;
+  &--checkbox{
+    .radio__visible{
+      border-radius: 0;
+      &:before{
+        border-radius: 0%;
+      }
+    }
+    
+  }
+  &:last-child{
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+  &.radio--checkbox{
+    padding-bottom: 45px;
+  }
+}
+
+.radio__element{
+display: none;
+  &:checked + .radio__visible{
+    &::before{
+    display: block;
+    }
+}
+}
+.radio__visible{
+  width: 25px;
+  height: 25px;
+  position: relative;
+  border-radius:50% ;
+  background: $white;
+  &:before{
+  content: "";
+  display: none;
+  width: 14px;
+  height: 14px;
+  background: $red;
+  border-radius:50% ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  }
+}
+.radio__title{
+  color: $white;
+  padding-left: 10px;
+}
+
+.button--red {
+  padding: 20px 40px;
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  background: #e01f3d;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 20px;
+  &:hover{
+    background: $hover;
+  }
+}
+.button--transporent{
+background: transparent;
+color: #999999;
+text-transform: none;
+border: 1px solid transparent;
+padding: 0;
+&:hover{
+  color:$white
+}
+}

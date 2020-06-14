@@ -1,0 +1,29 @@
+.hero__main-section {
+  width: 400px;
+  margin-bottom: 100px;
+}
+.hero__main-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+}
+.hero__description {
+  padding-bottom: 45px;
+}
+.button.button--theme--white {
+  text-decoration: none;
+  padding: 20px 40px;
+  color: #ffffff;
+  border-radius: 40px;
+  background:$red;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  
+   &:hover{ 
+  background: $hover;
+}
+
+}

@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.menu {
+  display: flex;
+}
+.menu__list {
+  padding-left: 25px;
+  &last-chaild{
+    padding-left: 0;
+  }
+}
+.menu__link {
+  text-decoration: none;
+  color: $bold;
+
+}
+.phone-number {
+  font-size: 21px;
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+}
+.phone-number__icon-element {
+  width: 12px;
+  height: 12px;
+}
