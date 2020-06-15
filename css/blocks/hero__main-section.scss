@@ -1,15 +1,16 @@
 .hero__main-section {
   width: 400px;
-  margin-bottom: 100px;
 }
 .hero__main-title {
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+  line-height: 57px;
 }
 .hero__description {
-  padding-bottom: 45px;
+  margin-bottom: 45px;
+  font-size: 18px;
 }
 .button.button--theme--white {
   text-decoration: none;
@@ -21,6 +22,7 @@
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
+  display: inline-block;
   
    &:hover{ 
   background: $hover;

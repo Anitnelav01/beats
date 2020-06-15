@@ -1,10 +1,12 @@
 .benefits {
   display: flex;
 }
+.benefits-section{
+  background: $white;
+}
 .benefits__item {
   flex: 1;
   padding-right: 5%;
-  padding-bottom: 120px;
   position: relative;
   &:first-child{
     padding-left: 0;

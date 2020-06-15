@@ -1,31 +1,40 @@
-
 .hero{
-  background-color: $Whitesmoke;
-  min-height: 650px;
-  //height: 100vh;
+  background-color:$Whitesmoke;
   position: relative;
+
   &:before{
     content: url("../img/element1.png");
-    top: 700px;
-    right: 510px;
+    top: 98%;
+    right: 28%;
     transform: translate(50%);
     position: absolute;
   }
 }
-
-.hero__baner{
-  position:relative;
-  .hero__baner-img {
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    border-radius: 50%;
-    top: 156px;
-    right: 30px;
-  }
+.hero__content {
+  margin-bottom: 95px;
+  margin-top: 75px;
 }
+
 .hero__description {
-  padding-bottom: 45px;
-  width: 325px;
+  margin-bottom: 45px;
+  //width: 325px;
   font-size: 18px;
+}
+.hero__container-header{
+  width: 100%;
+  position: absolute;
+  z-index: 99; 
+}
+.hero__wrapper{
+  position:relative;
+}
+
+.hero__headphones{
+  width: 510px;
+    height: 510px;
+    position: absolute;
+    background: white;
+    top: 68px;
+    right: 0;
+    border-radius: 50%;
 }

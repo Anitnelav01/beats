@@ -1,5 +1,8 @@
 .form-section{
   background-image: url(../img/forma.png);
+  background-size: cover;
+  justify-content: center;
+  display: flex;
 }
 .form__title{
   color:$white;
@@ -52,6 +55,7 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 

@@ -1,20 +1,18 @@
-.hero__icon-section {
-  display: flex;
-  padding-bottom: 35px;
-}
 .features__item {
   display: flex;
+  margin-right: 45px;
+  &:last-child{
+    margin-right: 0px;
+  }
 }
-.features__list{
-  padding-right: 45px;
-    &:last-child{
-    padding-right: 0;
-    }
+.features__list {
+  display: flex;
+  align-items: center;
 }
-
 .features__icon{
   padding-right: 10px;
 }
 .features__text {
   width: 100px;
+  line-height: 20px;
 }

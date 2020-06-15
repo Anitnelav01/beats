@@ -8,6 +8,9 @@
 .fixed-menu__item{
   margin-bottom: 5px;
 
+  &:last-child{
+    margin-bottom: 0;
+  }
   &--active{
     .fixed-menu__link{
       border-color: #e01f3d;

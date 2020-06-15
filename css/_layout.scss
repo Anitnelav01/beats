@@ -3,7 +3,7 @@ body, html {
 }
 
 body{
-  font-size: "&baseFontSaze";
+  font-size: $baseFontSize;
   font-family: 'Play';
   line-height: 1.42;
   position: relative;
@@ -18,9 +18,13 @@ body{
   overflow: hidden;
 }
 .container{
-  width: 940px;
-  margin: auto;
+height: 100%;
+width: 940px;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
+
 h1, h2, h3, h4, h5, h6{
   margin: 0;
   font-weight: normal;
