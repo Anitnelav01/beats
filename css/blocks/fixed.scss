@@ -19,6 +19,14 @@
       }
     }
   }
+  &:hover{
+    .fixed-menu__link{
+      border-color: #e01f3d;
+      &:before{
+        background: #e01f3d;
+      }
+    }
+  }
 }
 .fixed-menu__link{
   width: 16px;
