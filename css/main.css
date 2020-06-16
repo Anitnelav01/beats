@@ -551,6 +551,10 @@ a {
     border-color: #e01f3d; }
     .fixed-menu__item--active .fixed-menu__link:before {
       background: #e01f3d; }
+  .fixed-menu__item:hover .fixed-menu__link {
+    border-color: #e01f3d; }
+    .fixed-menu__item:hover .fixed-menu__link:before {
+      background: #e01f3d; }
 
 .fixed-menu__link {
   width: 16px;
