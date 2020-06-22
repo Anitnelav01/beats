@@ -1,3 +1,13 @@
+html{
+  font-size: $baseFontSize;
+  @include tablets {
+    font-size: $baseFontSize -1px;
+  }
+  @include phones {
+    font-size: $baseFontSize -2px;
+  }
+
+}
 body, html {
  height: 100%;
 }
@@ -13,13 +23,14 @@ body{
 .wrapper{
   position: relative;
   width: 100%;
-  min-width: 940px+20px;
+  min-width: 320px;
   min-height: 100%;
   overflow: hidden;
 }
 .container{
 height: 100%;
-width: 940px;
+width: 95%;
+max-width: $containerWidth;
 display: flex;
 flex-direction: column;
 justify-content: center;

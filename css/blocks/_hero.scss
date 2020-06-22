@@ -2,39 +2,32 @@
   background-color:$Whitesmoke;
   position: relative;
 
-  &:before{
+  /*&:before{
     content: url("../img/element1.png");
     top: 98%;
     right: 28%;
     transform: translate(50%);
     position: absolute;
-  }
+  }*/
 }
 .hero__content {
-  margin-bottom: 95px;
-  margin-top: 75px;
+  margin-bottom: rem(95px);
+  margin-top: rem(75px);
 }
 
 .hero__description {
-  margin-bottom: 45px;
-  //width: 325px;
-  font-size: 18px;
+  margin-bottom: rem(45px);
+  //width: rem(325px);
+  font-size: rem(18px);
 }
 .hero__container-header{
   width: 100%;
   position: absolute;
   z-index: 99; 
+  @include tablets{
+    width: 95%;
+  }
 }
 .hero__wrapper{
   position:relative;
-}
-
-.hero__headphones{
-  width: 510px;
-    height: 510px;
-    position: absolute;
-    background: white;
-    top: 68px;
-    right: 0;
-    border-radius: 50%;
 }

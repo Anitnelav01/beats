@@ -1,0 +1,28 @@
+.menu {
+  display: flex;
+  margin: 0 rem(10px);
+  display: flex;
+  align-items: center;
+  @include tablets{
+  display: none;
+  
+}
+}
+.menu__list {
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+.menu__item{
+  margin-left: rem(25px);
+  &:first-child{
+    margin-left: rem(0px);
+  }
+}
+.menu__link {
+  text-decoration: none;
+  color: $bold;
+  white-space: nowrap;
+}

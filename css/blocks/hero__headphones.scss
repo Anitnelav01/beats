@@ -1,0 +1,50 @@
+.hero__headphones-desktop{
+  
+    position: absolute;
+    top: rem(68px);
+    right: 0;
+    @include tablets{
+     display: none;
+    }
+    @media screen and (max-width: 950px) {
+      top: rem(115px);
+
+    }
+}
+
+.headphones-banner{
+  width: rem(510px);
+  height: rem(510px);
+  background: white;
+  border-radius: 50%;
+  @media screen and (max-width: 950px) {
+    width: rem(380px);
+    height: rem(380px);
+    }
+    @include tablets{
+      width: rem(348px);
+      height: rem(348px);
+    }
+    @include tablets{
+      width: rem(290px);
+      height: rem(290px);
+    }
+
+}
+
+.headphones-banner img{
+  width: 100%;
+  height: 100%;
+}
+
+.hero__headphones-mobile{
+  display: none;
+  @include tablets{
+    display: block;
+    margin-bottom: 36px;
+   }
+   @include phones{
+    display: block;
+    margin-bottom: 30px;
+   }
+}

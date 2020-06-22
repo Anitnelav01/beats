@@ -1,59 +1,103 @@
 .benefits {
   display: flex;
-}
+  @include tablets{
+   /* width: 730px; */}
+    @include phones{
+    flex-direction: column;
+    /* width: 730px; */
+    }
+  }
+
 .benefits-section{
   background: $white;
 }
 .benefits__item {
-  flex: 1;
-  padding-right: 5%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
   position: relative;
-  &:first-child{
-    padding-left: 0;
-  }
   &:last-child{
-    padding-right: 0;
-    &:before{
+    margin-right: 0;
+    &:before {
       display: none;
     }
-
   }
-  &:before{
+  &:before {
     position: absolute;
-    content: url("../img/before.png");
-    top: 50px;
-    right: 23px;
+    content: url(../img/before.png);
+    top: rem(50px);
+    right: rem(-15px);
+    -webkit-transform: translate(50%);
+    -ms-transform: translate(50%);
     transform: translate(50%);
-  }
-  
+    @include tablets{
+      display:none;
+    }
+    
+}
+@include phones{
+  margin-right: 0;
+  flex-direction: row;
+  margin-bottom: 40px;
+
+}
 }
 .benefits__element {
-  height: 126px;
-  width: 126px;
-  background: #f5f5f5;
+  height: rem(126px);
+  width: rem(126px);
+  background: $Whitesmoke;
   border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  margin-bottom: 45px;
-  overflow: hidden;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: rem(42px);
+  @include tablets{
+   margin-bottom: rem(30px);
+  }
+  @include phones{
+    margin-bottom: 0;
+    padding: rem(40px);
+    margin-right: rem(15px);
+  }
 }
 .benefits__icon {
-  width: 60px;
-  height: 55px;
-  position: absolute;
-  top: 29%;
-  left: 51%;
-  transform: translate(-50%);
+  width: rem(60px);
+  height: rem(55px);
 }
 .benefits__title {
-  font-size: 24px;
+  font-size: rem(24px);
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
+  @include tablets{
+  margin-bottom: rem(15px);
+  line-height: 24px;
+  }
+  @include phones{
+  text-align: initial;
+  }
 }
 .benefits__desc {
   color: #666666;
-  width: 300px;
+  line-height: rem(22px);
+
+  @include tablets{
+  font-size: rem(16px);
+  }
+  @include phones{
+    text-align: initial;
+  }
 }
-.benefits__text {
-  width: 283px;
+.benefits__icon {
+  width: rem(55px);
+  height: rem(50px);
 }
+/*.benefits-section:after{
+  content: url(../img/element2.png);
+  top:  rem(1994px);
+  left: rem(446px);
+  -webkit-transform: translate(50%);
+  -ms-transform: translate(50%);
+  transform: translate(50%);
+  position: absolute;
+}*/

@@ -1,16 +1,16 @@
 .interactive-avatar {
-  width: 65px;
-  height: 65px;
-  border: 5px solid transparent;
+  width: rem(65px);
+  height: rem(65px);
+  border: rem(5px) solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
   
   &--active{
-    border-color: #e01f3d;
+    border-color: $red;
   }
   &:hover{
-    border-color: #e01f3d;
+    border-color: $red;
   }
 }
 
