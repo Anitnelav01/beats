@@ -3,7 +3,7 @@
   display: block;
   width: 20px;
   height: 30px;
-  background:no-repeat url("/img/arrow-right.png");
+  background:no-repeat url("../img/arrow-right.png");
   right: -40px;
   @media screen and (max-width: 1050px) {
     right: 0px;
@@ -22,7 +22,7 @@
   display: block;
   width: 20px;
   height: 30px;
-  background:no-repeat url("/img/arrow-left.png");
+  background:no-repeat url("../img/arrow-left.png");
   left: -40px;
   @media screen and (max-width: 1050px) {
     left: 0px;
