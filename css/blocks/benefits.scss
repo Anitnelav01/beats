@@ -40,6 +40,9 @@
   margin-right: 0;
   flex-direction: row;
   margin-bottom: 40px;
+  &:last-child{
+    margin-bottom: 0;
+  }
 
 }
 }

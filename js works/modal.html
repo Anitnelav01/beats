@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title>Модальное окно</title>
+    <style>
+        .btn {
+            background: #a492e6;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 18px;
+            outline: none;
+        }
+
+        .simple-overlay-container {
+            height: 500px;
+            position: relative;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .simple-overlay-container .overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(253, 246, 227, .5);
+
+            z-index: 10000;
+        }
+
+        .simple-overlay-container .overlay.active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .simple-overlay-container .modal-container {
+            position: relative;
+        }
+
+        .simple-overlay-container .close {
+            color: #fff;
+            position: absolute;
+            right: -5px;
+            top: -10px;
+            background: #d00;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .simple-overlay-container .content {
+            width: 400px;
+            background: #444;
+            border-radius: 5px;
+            padding: 10px;
+            color: #fff;
+            margin: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="modal-wrapper">
+    <h1>Модальное окно</h1>
+    <div class="simple-overlay-container">
+        <div class="container"><p>Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Autem magnam ratione quasi alias adipisci molestias doloribus, provident eum natus rerum,
+            numquam delectus cum at nobis consectetur deserunt perspiciatis eveniet temporibus.</p>
+            <button id="openOverlay" class="btn">открыть</button>
+        </div>
+        <div id="overlay" class="overlay">
+            <div class="modal-container"><a class="close" href="#">x</a>
+                <div class="content">Hello, <b>world</b>!</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    var openOverlay = document.getElementById("openOverlay");
+    var overlay = document.getElementById("overlay");
+
+    openOverlay.addEventListener("click", function (e) {
+        overlay.classList.add('active');
+
+    });
+
+    document.addEventListener("click", function (e) {
+        var target = e.target;
+        if (target != document.querySelector('.content') && target != openOverlay) {
+            overlay.classList.remove('active');
+        }
+    });
+
+
+</script>
+
+</body>
+</html>

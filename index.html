@@ -8,9 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/main.css">
   <script src="https://use.fontawesome.com/77df4b9135.js"></script>
+  <script src="./js/main.js"></script>
 </head>
-
-<body>
+<body body--active-menu>
   <div class="wrapper">
     <div class="maincontent">
       <section class="section hero">
@@ -19,45 +19,51 @@
             <svg class="logo">
               <use xlink:href="./svg/sprite.svg#logo"></use>
             </svg>
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__item ">
-                  <a href="#" class="menu__link">О нас</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Наушники</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Команда</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Цвета</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Отзывы</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Как мы работаем</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Контакты </a>
-                </li>
-              </ul>
-            </nav>
+            <div class="overlay" id="overlay">
+              <a href="javascript:void(0)" class="overlay__close">
+                <img src="/img/close.png" class="overlay__close-icon" alt="close">
+              </a>
+              <div class="overlay__menu" id="overlay__menu">
+                <nav class="menu menu--tablets menu--active">
+                  <ul class="menu__list">
+                    <li class="menu__item ">
+                      <a href="#" class="menu__link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Наушники</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Команда</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Цвета</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Отзывы</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Как мы работаем</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Контакты </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
             <a href="8 800 903 90 90" class="phone-number">
               <span class="phone-number__icon">
                 <img src="./img/phone.png" class="phone-number__icon-element" alt="phone-icon">
               </span>
               <span>8 800 903 90 90</span>
             </a>
-            <a href="#" class="hamburger">
-              <span class="hamburger__plank"></span>
-              <span class="hamburger__plank"></span>
-              <span class="hamburger__plank"></span>
+            <a href="#" class="burger" id="burger">
+              <span class="burger__plank"></span>
+              <span class="burger__plank"></span>
+              <span class="burger__plank"></span>
             </a>
           </header>
         </div>
-
         <div class="container">
           <div class="hero__wrapper">
             <div class="hero__content">
@@ -167,6 +173,59 @@
                 </div>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section slider">
+        <div class="container-slider">
+          <div class="slider__content">
+            <div class="slider__banner">
+              <img src="img/banner-slider.png" class="slider-banner" alt="slider-banner">
+            </div>
+            <div class="slider__block">
+              <div class="slider__functions">
+                <svg class="slider__icon">
+                  <use xlink:href="./svg/sprite.svg#gear"></use>
+                </svg>
+              </div>
+              <h3 class="section-title slider">beats solo 3. цвет «атласное серебро»</h3>
+              <div class="sliger__content">
+                <div class="slider__subtitle">
+                  <p>
+                    Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему
+                    iPhone
+                    —
+                    они мгновенно подключатся к нему.
+                  </p>
+                </div>
+                <ul class="slider__items">
+                  <li class="slider__item">
+                    <div class="slider__title">Зарядка</div>
+                    <div class="slider__desc">2 часа</div>
+                  </li>
+                  <li class="slider__item">
+                    <div class="slider__title">Вес</div>
+                    <div class="slider__desc">215 грамм</div>
+                  </li>
+                </ul>
+                <div class="slider__row">
+                  <div class="slider__col">
+                    <div class="slider__price">14 990</div>
+                    <div class="slider__currency">₽</div>
+                  </div>
+                  <div class="slider__col">
+                    <button class="slider__button button--red">Заказать</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="slider__arrow-left">
+            <a href="#" class="slider__arrow"></a>
+          </div>
+          <div class="slider__arrow-right">
+            <a href="#" class="slider__arrow"></a>
           </div>
         </div>
       </section>
@@ -290,9 +349,7 @@
                 </div>
               </div>
             </div>
-
           </form>
-
         </div>
       </section>
       <section class="section section-map">
@@ -342,10 +399,10 @@
                 <li class="socials__item">
                   <a href="#" class="socials__link">
                     <div class="socials__icon">
-                    <div class="socials__icon-instagram">
-                      <i class="fa fa-instagram"></i>
+                      <div class="socials__icon-instagram">
+                        <i class="fa fa-instagram"></i>
+                      </div>
                     </div>
-                  </div>
                   </a>
                 </li>
               </ul>
@@ -355,7 +412,6 @@
       </section>
     </div>
   </div>
-
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
       <li class="fixed-menu__item fixed-menu__item--active"> <a href="#" class="fixed-menu__link"></a>
@@ -378,7 +434,6 @@
       </li>
     </ul>
   </nav>
-
 </body>
 
 </html>

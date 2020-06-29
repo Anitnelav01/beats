@@ -1,0 +1,18 @@
+.slider__functions {
+  width: 90px;
+  height: 90px;
+  background: #6e6e6e;
+  border-radius: 5%;
+  margin-bottom: 35px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  @include tablets{
+    display: none;
+  }
+}
+.slider__icon {
+  width: 36px;
+  height: 36px;
+  fill: #ffff;
+}
