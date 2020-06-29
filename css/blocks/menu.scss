@@ -27,6 +27,9 @@
   @include tablets{
     margin-left: 0;
     margin-bottom: rem(50px);
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 }
 .menu__link {

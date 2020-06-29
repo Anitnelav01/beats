@@ -61,8 +61,8 @@
 
 
 .slider__block {
-  //width: 50%;
   width: 410px;
+  position: relative;
   @include tablets{
   width: 100%;
   margin-bottom: 100px;
