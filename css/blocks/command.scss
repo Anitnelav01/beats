@@ -5,6 +5,7 @@
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  
 }
 .command__item-title {
   border: none;
@@ -31,7 +32,8 @@
 .command__avatar {
   width: 220px;
   height: 290px;
-  margin-bottom: 30px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 .command__items {
   display: flex;
@@ -45,12 +47,15 @@
   text-align: center;
   max-width: rem(260px);
   display: flex;
+  display: flex;
+    flex-direction: column;
   justify-content: center;
   &:last-child{
     margin-right: 0;
   }
   @include tablets{
     margin-right: 0;
+    margin-bottom: 20px;
   }
 }
 .command__content {
@@ -59,7 +64,7 @@
 .command__subtitle {
   font-size: 16px;;
   color: #666666;
-  margin-bottom: 1.66667rem;
+  
 }
 .command__position{
   margin-bottom: 10px;
@@ -89,7 +94,7 @@
   }
 }
 .command__content{
-  position: absolute;
+  display: block;
   top: 100%;
 }
 .command__content-item{

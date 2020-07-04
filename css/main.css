@@ -800,7 +800,8 @@ a {
 .command__avatar {
   width: 220px;
   height: 290px;
-  margin-bottom: 30px; }
+  margin: auto;
+  margin-bottom: 20px; }
 
 .command__items {
   display: -webkit-box;
@@ -824,6 +825,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
@@ -831,15 +837,15 @@ a {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
     .command__item {
-      margin-right: 0; } }
+      margin-right: 0;
+      margin-bottom: 20px; } }
 
 .command__content {
   text-align: center; }
 
 .command__subtitle {
   font-size: 16px;
-  color: #666666;
-  margin-bottom: 1.66667rem; }
+  color: #666666; }
 
 .command__position {
   margin-bottom: 10px;
@@ -877,7 +883,7 @@ a {
       flex-direction: column; } }
 
 .command__content {
-  position: absolute;
+  display: block;
   top: 100%; }
 
 .command__content-item {
