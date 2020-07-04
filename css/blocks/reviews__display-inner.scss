@@ -85,4 +85,18 @@
   justify-content: center;
  
 }
+.reviews__item {
+  position: absolute;
+  opacity: 0;
+  display:flex;
+  @include tablets{
+    flex-direction: column
+  }
+}
+.reviews__item.active {
+  opacity: 1;
+  opacity: 1;
+  position: static;
+  pointer-events: unset;
+}
 

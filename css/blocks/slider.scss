@@ -6,7 +6,11 @@
   height: 100%;
   width: 95%;
   max-width: 940px;
- 
+  .bx-wrapper{
+    box-shadow: none;
+    border: 0;
+    background: transparent;
+  }
 }
 .slider {
   background: $Whitesmoke;

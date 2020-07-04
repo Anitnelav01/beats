@@ -1,4 +1,4 @@
-.interactive-avatar {
+.reviews__switcher-item{
   width: rem(65px);
   height: rem(65px);
   border: rem(5px) solid transparent;
@@ -6,7 +6,7 @@
   overflow: hidden;
   position: relative;
   
-  &--active{
+  &.active{
     border-color: $red;
   }
   &:hover{
