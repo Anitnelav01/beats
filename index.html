@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/main.css">
   <script src="https://use.fontawesome.com/77df4b9135.js"></script>
   <script src="./js/main.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
 
 <body body--active-menu>
@@ -416,11 +417,11 @@
               </div>
             </li>
           </ul>
-                                                               <!--- tablets--->
+          <!--- tablets--->
           <ul class="command__items command__items--version--mobile">
             <li class="command__item">
               <button class="command__item-title" type="button">Борис Федорович</button>
-              <div class="command__content">              
+              <div class="command__content">
                 <div class="command__text">
                   <div class="command__text-block">
                     <div class="command__avatar">
@@ -434,7 +435,7 @@
             </li>
             <li class="command__item">
               <button class="command__item-title" type="button">Алла Иванова </button>
-              <div class="command__content">                
+              <div class="command__content">
                 <div class="command__text">
                   <div class="command__text-block">
                     <div class="command__avatar">
@@ -448,7 +449,7 @@
             </li>
             <li class="command__item">
               <button class="command__item-title" type="button">Кирилл Матросов</button>
-              <div class="command__content">               
+              <div class="command__content">
                 <div class="command__text">
                   <div class="command__text-block">
                     <div class="command__avatar">
@@ -564,15 +565,16 @@
         <div class="container">
           <h2 class="section__title form__title">Закажите доставку</h2>
           <form class="form">
+            <input type="hidden" name="to" value="qwertyuiop@mail.com">
             <div class="form__col">
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Имя</div>
-                  <input class="form__input" type="text">
+                  <input class="form__input " name="name" type="text">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Телефон</div>
-                  <input class="form__input" placeholder="8(902)-234-8912" type="text">
+                  <input class="form__input" name="phone" placeholder="8(902)-234-8912" type="text">
                 </label>
               </div>
               <div class="form__row">
@@ -604,14 +606,14 @@
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Комментарий</div>
-                  <textarea class="form__textaria form__input--texteria"></textarea>
+                  <textarea class="form__textaria form__input--texteria" name="comment"></textarea>
                 </label>
               </div>
               <div class="form__controls">
                 <label class="radio">
                   <input type="radio" name="radio" class="radio__element">
                   <div class="radio__visible"></div>
-                  <div class="radio__title">Потребуетсясдача</div>
+                  <div class="radio__title">Потребуется сдача</div>
                 </label>
                 <label class="radio">
                   <input type="radio" name="radio" class="radio__element">
@@ -640,6 +642,16 @@
           </form>
         </div>
       </section>
+      <div class="modal" id="modal">
+        <div class="modal__container">
+          <div class="modal__content">
+            Сообщение отправлено
+          </div>
+          <div class="modal__button-container">
+            <a href="#" class="btn button--red app-red-btn btn--theme--red">Закрыть</a>
+          </div>
+        </div>
+      </div>
       <section class="section section-map">
         <div class="container">
           <footer class="footer">
@@ -725,10 +737,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/comment.js"></script>
   <script src="./js/slider.js"></script>
   <script src="./js/command.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
