@@ -37,10 +37,10 @@
     margin-top: 80px;
   }
   @include phones{
-    width: 292px;
-    height: 292px;
+    width: 200px;
+    height: 200px;
     margin-bottom: 20px;
-    margin-top: 60px;
+  
 }
 @media screen and (max-width: 950px) {
   width: rem(300px);

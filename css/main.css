@@ -547,10 +547,9 @@ a {
       margin-top: 80px; } }
   @media screen and (max-width: 480px) {
     .slider__banner {
-      width: 292px;
-      height: 292px;
-      margin-bottom: 20px;
-      margin-top: 60px; } }
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px; } }
   @media screen and (max-width: 950px) {
     .slider__banner {
       width: 16.66667rem;
