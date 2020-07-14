@@ -1698,12 +1698,25 @@ footer {
   -ms-flex-align: center;
   align-items: center; }
 
+.player-section__container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  max-width: 660px; }
+
 #player {
-  width: 660px; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .player-panel {
   margin-top: -6px;
-  width: 660px;
+  width: 100%;
   height: 40px;
   background: black;
   display: -webkit-box;
@@ -1713,7 +1726,9 @@ footer {
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: distribute;
-  justify-content: space-around; }
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0; }
 
 .player-panel__action {
   width: 40px;
@@ -1833,6 +1848,9 @@ footer {
   width: 446px;
   height: 4px;
   background: #303030; }
+  @media screen and (max-width: 768px) {
+    .player-panel__progress {
+      width: 220px; } }
 
 .player-panel__viewed {
   position: absolute;

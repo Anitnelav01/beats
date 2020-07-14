@@ -5,23 +5,54 @@
   background: $Whitesmoke;
 }
 .player {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
-#player{
-  width: 660px;
+.player-section__container{
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  max-width: 660px;
+
+
 }
+
+#player{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;}
   .player-panel {
     margin-top: -6px;
-    width: 660px;
+    width: 100%;
     height: 40px;
     background: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    position: absolute;
+    bottom: 0;
   }
 
   .player-panel__action{
@@ -149,6 +180,10 @@
 
   .player-panel__progress{
     width: 446px;
+      @include tablets{
+        width: 220px;
+
+      }
     height: 4px;
     background: #303030;
   }
