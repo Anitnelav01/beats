@@ -1,8 +1,13 @@
 .section{
   height: 100vh;
+  //height: 100%;
   min-height: rem(650px);
   display: flex;
   justify-content: center;
+  @include phones{
+    zoom: 80%;
+    height: 100%;
+  }
 }
 .headline {
   text-align: center;

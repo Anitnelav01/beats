@@ -446,6 +446,10 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media screen and (max-width: 480px) {
+    .section {
+      zoom: 80%;
+      height: 100%; } }
 
 .headline {
   text-align: center;
