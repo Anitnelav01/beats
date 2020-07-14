@@ -1,3 +1,6 @@
+.container.benefits{
+  position: relative;
+}
 .benefits {
   display: flex;
   @include tablets{
@@ -95,12 +98,3 @@
   width: rem(55px);
   height: rem(50px);
 }
-/*.benefits-section:after{
-  content: url(../img/element2.png);
-  top:  rem(1994px);
-  left: rem(446px);
-  -webkit-transform: translate(50%);
-  -ms-transform: translate(50%);
-  transform: translate(50%);
-  position: absolute;
-}*/

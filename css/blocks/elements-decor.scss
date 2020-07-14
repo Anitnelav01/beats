@@ -1,0 +1,46 @@
+
+.container.reviews{
+  &:after{
+    content: url("../img/element3.png");
+    top: 98%;
+    left: 0%;
+    transform: translate(50%);
+    position: absolute;
+  } 
+}
+.container-hero{ 
+  &:before{
+    content: url("../img/element1.png");
+    top: 98%;
+    right: 2%;
+    transform: translate(50%);
+    position: absolute;
+  }
+}
+.container-slider{
+  &:before{
+    content: url("../img/element4.png");
+    top: 98%;
+    right: 2%;
+    transform: translate(50%);
+    position: absolute;
+  }
+}
+.container.benefits{
+  &:after{
+    content: url("../img/element2.png");
+    top: 98%;
+    left: 1%;
+    transform: translate(50%);
+    position: absolute;
+  }
+}
+.container.player{
+  &:before{
+    content: url("../img/element5.png");
+    top: 98%;
+    right: 2%;
+    transform: translate(50%);
+    position: absolute;
+  }
+}

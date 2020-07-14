@@ -1,14 +1,9 @@
 .hero{
   background-color:$Whitesmoke;
   position: relative;
-
-  /*&:before{
-    content: url("../img/element1.png");
-    top: 98%;
-    right: 28%;
-    transform: translate(50%);
-    position: absolute;
-  }*/
+}
+.container-hero{
+  position: relative;
 }
 .hero__content {
   margin-bottom: rem(95px);
@@ -17,7 +12,6 @@
 
 .hero__description {
   margin-bottom: rem(45px);
-  //width: rem(325px);
   font-size: rem(18px);
 }
 .hero__container-header{

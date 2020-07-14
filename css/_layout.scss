@@ -24,7 +24,7 @@ body{
   position: relative;
   width: 100%;
   min-width: 320px;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
 }
 .container{
@@ -34,6 +34,11 @@ max-width: $containerWidth;
 display: flex;
 flex-direction: column;
 justify-content: center;
+}
+.maincontent{
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
 }
 
 h1, h2, h3, h4, h5, h6{

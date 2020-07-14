@@ -1,0 +1,96 @@
+.section.color-menu{
+  background-image: url(../img/menu-color.png);
+  justify-content: center;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+.container.color-menu{
+  flex-direction: initial;
+  justify-content: space-between;
+}
+.color-menu__items {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.color-menu__item {
+  display: contents;
+  position: relative;
+}
+.color-menu.section__title {
+  color: #ffff;
+  margin-top: 95px;
+}
+
+.color-menu__content-text {
+  color: #ffff;
+  font-size: 16px;
+  display: block;
+  //left: 100%;
+  width: 340px;
+  padding-top: 40px;
+  padding-left: 30px;
+}
+.color-menu__title {
+  width: 100px;
+  height: 100%;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  
+   @include phones{
+     width: 80px;
+}
+}
+.color-menu--silver {
+  background: #999999;
+}
+.color-menu--black {
+  background: #151515;
+}
+.color-menu--red{
+  background: #e01f3d;
+}
+.color-menu__button {
+  border: none;
+  outline: none;
+ display: flex;
+}
+.color-menu__content {
+  position: relative;
+  background: rgba(47, 50, 52, 0.9);
+  overflow: hidden;
+  transition: width .6s;
+  width: 0px;
+}
+.color-menu__text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 36px;
+  font-weight: 700;
+  align-self: flex-end;
+  padding: 30px 20px;
+  color: $Whitesmoke;
+  @include phones{
+    padding: 30px 15px;
+  }
+}
+.color-menu__close {
+  position: absolute;
+  z-index: 100;
+  top: 25px;
+  right: 30px;
+  display: block;
+}
+
+.static_buttons{
+  display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+ 
