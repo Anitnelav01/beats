@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   @include phones{
-    zoom: 80%;
+    zoom: 75%;
     height: 100%;
   }
 }

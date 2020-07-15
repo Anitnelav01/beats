@@ -8,6 +8,17 @@
   
 }
 }
+
+.menu--active{
+  left: 0;
+  opacity: 1;
+  display: flex;
+  @include tablets{
+    display: flex;
+    
+  }
+}
+
 .menu__list {
     display: flex;
     white-space: nowrap;
@@ -60,11 +71,7 @@
 .body--active-menu{
   overflow: hidden;
 }
-.menu--active{
-  left: 0;
-  opacity: 1;
-  display: flex;
-}
+
 
 /*.overlay{
   height: 100%;
@@ -96,6 +103,7 @@
     left: 0;
     height: 100%;
     width: 100%;
+    min-height: 700px;
     background: black;}
 }
 
