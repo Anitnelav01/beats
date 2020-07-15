@@ -1,0 +1,53 @@
+$baseFontSize: 18px;
+$containerWidth: 940px;
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+//media//
+@import "media.scss";
+
+//colors
+$Whitesmoke:#f5f5f5;
+$bold:#000000;
+$red:#e01f3d;
+$hover:#ca1b36;
+$white:#ffffff;
+$socials:#b2b2b2;
+
+
+//normalize
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"; 
+
+//z-indexes
+$z-fixed-menu:100;
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+//setyps
+@import "_layout.scss";
+@import "blocks/_hero.scss";
+@import "blocks/header.scss";
+@import "blocks/menu.scss";
+@import "blocks/phone.scss";
+@import "blocks/burger.scss";
+@import "blocks/hero__main-section.scss";
+@import "blocks/hero__headphones.scss";
+@import "blocks/hero__icon-section.scss";
+@import "blocks/section.scss";
+@import "blocks/slider.scss";
+@import "blocks/slider__arrow.scss";
+@import "blocks/functions.scss";
+@import "blocks/command.scss";
+@import "blocks/benefits.scss";
+@import "blocks/reviews__display-inner.scss";
+@import "blocks/interactive.scss";
+@import "blocks/forma.scss";
+@import "blocks/radio.scss";
+@import "blocks/section-map.scss";
+@import "blocks/footer.scss";
+@import "blocks/socials.scss";
+@import "blocks/fixed.scss";
+@import "blocks/modal.scss";
+@import "blocks/color-menu.scss";
+@import "blocks/player-section.scss";
+@import "blocks/elements-decor.scss";
